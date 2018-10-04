@@ -8,8 +8,8 @@ print(
     str(
         (
             ( ( current_date.year - int(parts[2]) ) * 365.2422 ) + # days in a year
-            ( 365.2422/12*int(parts[0]) ) +
-            ( int(parts[1]) )
+            ( 365.2422/12*int(parts[0]) ) + # days in a month * number of months in the age
+            ( int(parts[1]) ) # plus number of days
         ) / 365.2422
     ) + " Years old!"
 )
